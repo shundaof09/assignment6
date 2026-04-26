@@ -1,0 +1,179 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #faf7f7;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f7e8ef;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #b76e79;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #555;
+}
+/* ===== Logo Image ===== */
+.logo-img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem auto;
+}
+/* ===== Responsive Design ===== */
+@media (max-width: 700px) {
+    .logo-img {
+        width: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .hero-img {
+        max-height: 200px;
+    }
+}
+
+
+
+/* ===== Navigation ===== */
+nav {
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b76e79;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8a5058;
+}
+
+/* ===== Main Content ===== */
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #b76e79;
+}
+
+/* Image styling */
+.profile-img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f7e8ef;
+    margin-top: 2rem;
+    color: #555;
+}
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero-content {
+    margin-top: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background: #b76e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #8a5058;
+}
+/* ===== Content Grid ===== */
+.content-grid {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.card h3 {
+    color: #b76e79;
+}
+/* ===== Responsive Design ===== */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .hero-img {
+        max-height: 200px;
+    }
+}
+
