@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline — Rashunda's Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif; background: #faf7f7; color: #333;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; text-align: center; padding: 2rem;
+    }
+    .offline-card {
+      background: white; padding: 3rem 2rem; border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 420px;
+    }
+    .offline-icon { font-size: 4rem; margin-bottom: 1rem; }
+    h1 { color: #b76e79; font-size: 1.5rem; margin-bottom: 0.75rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 1.5rem; }
+    .retry-btn {
+      display: inline-block; padding: 0.75rem 1.5rem; background: #b76e79;
+      color: white; border: none; border-radius: 8px; cursor: pointer;
+      font-size: 1rem; font-weight: bold; transition: background 0.3s ease;
+    }
+    .retry-btn:hover { background: #8a5058; }
+  </style>
+</head>
+<body>
+  <div class="offline-card">
+    <div class="offline-icon">📡</div>
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. Some content may not be available right now, but cached pages will still work!</p>
+    <button class="retry-btn" onclick="window.location.reload()">Try Again</button>
+  </div>
+</body>
+</html>

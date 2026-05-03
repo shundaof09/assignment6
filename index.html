@@ -1,84 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashunda | Personal Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b76e79">
+  <meta name="description" content="Rashunda's Smart Portfolio Hub — AI-enhanced personal website showcasing web development, data strategy, and creative design.">
+  <title>Rashunda | Smart Portfolio Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
-
 <body>
 
-    <!-- ===== Header ===== -->
-      <header>
+  <!-- ===== Header ===== -->
+  <header>
     <img src="logo.png" alt="Rashunda logo" class="logo-img">
-    <p class="tagline">Customer Success • Data Strategy • Web Development Student</p>
-   </header>
-       <!-- ===== Navigation ===== -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- ===== Hero Content ===== -->
-    <section class="hero">
+    <p class="tagline">Customer Success &bull; Data Strategy &bull; Web Development Student</p>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero Content ===== -->
+  <section class="hero">
     <img src="banner.jpg" alt="Decorative banner image" class="hero-img">
     <div class="hero-content">
-        <h2>Welcome to My Website</h2>
-        <p>Exploring web development, design, and data strategy.</p>
-        <a href="#interests" class="cta-btn">Learn More</a>
+      <h2>Welcome to My Smart Portfolio</h2>
+      <p>Exploring web development, design, and data strategy — now powered by AI.</p>
+      <a href="#projects" class="cta-btn">View My Projects</a>
     </div>
+  </section>
+
+  <!-- ===== Content Grid ===== -->
+  <section class="content-grid fade-in">
+    <div class="card">
+      <div class="card-icon">&#128187;</div>
+      <h3>Web Development</h3>
+      <p>I enjoy building clean, responsive layouts using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">&#128200;</div>
+      <h3>Data Strategy</h3>
+      <p>My background in fintech and SaaS helps me create efficient systems.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">&#127912;</div>
+      <h3>Creative Design</h3>
+      <p>I love rose&#8209;gold aesthetics, minimal layouts, and polished branding.</p>
+    </div>
+  </section>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm a customer success and data strategy professional currently studying
+        Data Science Technology. I enjoy building clean, responsive web pages and
+        creating organized systems that make life easier.
+      </p>
+      <img src="profile.jpg" alt="A professional portrait of Rashunda" class="profile-img">
     </section>
-   <!-- ===== Content Grid ===== -->
-   <section class="content-grid">
-    <div class="card">
-        <h3>Web Development</h3>
-        <p>I enjoy building clean, responsive layouts using HTML and CSS.</p>
+
+    <!-- Interests Section -->
+    <section id="interests" class="fade-in">
+      <h2>My Interests</h2>
+      <p>
+        I love web development, fintech, clean UI design, and building efficient
+        workflows. Outside of tech, I enjoy coffee, mechanical keyboards, and
+        exploring historical sites.
+      </p>
+    </section>
+
+    <!-- ===== Projects Section (GitHub API) ===== -->
+    <section id="projects" class="fade-in">
+      <h2>My Projects</h2>
+      <p class="section-subtitle">Live from my GitHub repositories — updated automatically.</p>
+      <div class="projects-grid" id="projects-grid">
+        <div class="project-card skeleton-card">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="project-card skeleton-card">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+        <div class="project-card skeleton-card">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text short"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer id="contact">
+    <p>Contact: s2563218@students.fscj.edu</p>
+    <p>&copy; 2026 Rashunda &bull; Smart Portfolio Hub</p>
+    <p class="pwa-note" id="pwa-note"></p>
+  </footer>
+
+  <!-- ===== Chatbot Widget ===== -->
+  <div class="chatbot-container" id="chatbot-container">
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open AI chat assistant">
+      <span class="chat-icon">&#128172;</span>
+      <span class="close-icon">&times;</span>
+    </button>
+    <div class="chatbot-window" id="chatbot-window">
+      <div class="chatbot-header">
+        <span class="chatbot-title">&#129302; Ask About Rashunda</span>
+        <span class="chatbot-status" id="chatbot-status">Online</span>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot-message">
+          <p>Hi! I'm Rashunda's AI assistant. Ask me anything about her skills, projects, or background!</p>
+        </div>
+      </div>
+      <form class="chatbot-input-area" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Type a question..." autocomplete="off" required>
+        <button type="submit" aria-label="Send message">&#10148;</button>
+      </form>
+      <div class="chatbot-api-note">
+        <small>Powered by Google Gemini AI</small>
+      </div>
     </div>
+  </div>
 
-    <div class="card">
-        <h3>Data Strategy</h3>
-        <p>My background in fintech and SaaS helps me create efficient systems.</p>
-    </div>
-
-    <div class="card">
-        <h3>Creative Design</h3>
-        <p>I love rose‑gold aesthetics, minimal layouts, and polished branding.</p>
-    </div>
-    </section> 
-    <!-- ===== Main Content ===== -->
-    <main>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I’m a customer success and data strategy professional currently studying Data Science Technology.
-                I enjoy building clean, responsive web pages and creating organized systems that make life easier.
-            </p>
-
-            <!-- Image Requirement -->
-            <img src="profile.jpg" alt="A professional portrait of Rashunda" class="profile-img">
-        </section>
-
-        <!-- Interests Section -->
-        <section id="interests">
-            <h2>My Interests</h2>
-            <p>
-                I love web development, fintech, clean UI design, and building efficient workflows.
-                Outside of tech, I enjoy coffee, mechanical keyboards, and exploring historical sites.
-            </p>
-        </section>
-
-    </main>
-
-    <!-- ===== Footer ===== -->
-    <footer id="contact">
-        <p>Contact: s2563218@students.fscj.edu.</p>
-        <p>&copy; 2026 Rashunda</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

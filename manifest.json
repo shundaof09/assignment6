@@ -1,0 +1,14 @@
+{
+  "name": "Rashunda | Smart Portfolio Hub",
+  "short_name": "Rashunda",
+  "description": "AI-enhanced personal portfolio showcasing web development, data strategy, and creative design.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf7f7",
+  "theme_color": "#b76e79",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "logo.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
